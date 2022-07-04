@@ -3,14 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Greetings! | Sarah Layne UI/UX Designer</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header>
+    <header id="header">
       <div>
-        <picture>
-          <source srcset="img/SarahLayneLogo@1x.png" media="(max-width:767px)">
-          <img src="img/SarahLayneLogo@2x.png" alt="Sarah Layne Logo">
-        </picture>
+        <h2>Sarah Layne Designs</h2>
         <nav>
          <ul>
            <li><a href="index.html">Work</a></li>
@@ -22,7 +25,7 @@
     </header>
     <main>
 <!-- Start Hero Section -->
-      <div>
+      <div id="hero">
         <div>
          <h1>Hi, I’m Sarah.</h1>
          <span>I'm a UI/UX designer based in the US.</span>
@@ -31,7 +34,7 @@
       </div>
 <!-- End Hero Section -->
 <!-- Start Project Section -->
-    <div>
+    <div id="projects">
       <div>
        <h2>My Work</h2>
        <div>
@@ -44,7 +47,7 @@
          <div>
            <h3>Favr | Responsive Web App</h3>
            <p>I designed a simple, aesthetically pleasing UI for a location-based responsive web app. The app helps users connect with small businesses in their area. My process essentially followed the Double Diamond model of design. Some of the tasks I completed include: Competitor Analysis, user testing, user personas, user flows, wireframing, peer critique, style guide development, and breakpoint designs.</p>
-           <a></a>
+           <a href="#" class="button">Read more</a>
          </div>
          <div>
            <picture>
@@ -55,7 +58,7 @@
          <div>
            <h3>Thrifti | Money-Saving App</h3>
            <p>To meet user and stakeholder requirements, I created a friendly, easy to use, and fun UI for a financial app. My process involved competitor research, logo design, the development of brand guidelines, wireframing, prototyping, and Lean UX methodology.</p>
-           <a href="thrifti.html">Click here to view project.</a>
+           <a href="thrifti.html" class="button">Read more</a>
          </div>
        </div>
       </div>
@@ -67,7 +70,7 @@
         <h2>Get in Touch</h2>
         <p>Do you like my work and want to discuss opportunities? Please get in touch by calling (123) 456-7890. Prefer sending an email?</p>
         <div>
-         <a href="mailto:office@careerfoundry.com">Email me</a>
+         <a href="mailto:office@careerfoundry.com" class="button contact">Email me</a>
         </div>
 <!--Social Media Layout and Placeholders-->
         <div>
