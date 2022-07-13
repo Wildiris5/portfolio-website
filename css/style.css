@@ -191,6 +191,7 @@ nav {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 #projects img {
@@ -208,12 +209,18 @@ nav {
 
 #contact {
   padding-top: 50px;
+  text-align: center;
 }
 
 #social {
-  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 25px;
-  diplay: inline-block;
+}
+
+#social > div {
+  margin: 0 5px;
 }
 
 #aboutpic {
