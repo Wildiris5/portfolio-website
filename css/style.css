@@ -1,3 +1,4 @@
+
 /*
 Colors used:
 Primary Color (dark blue-green): #2D5E5E;
@@ -5,7 +6,6 @@ Secondary Color (medium blue-green): #B2D2D1;
 Supporting Color (light blue-green): #E7F1F1;
 Supporting Color (white): #FFFFFF
 */
-
 * {
   box-sizing: border-box;
 }
@@ -38,7 +38,7 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 500;
-  color: #2d5e5e
+  color: #2d5e5e;
   margin: 0;
 }
 
@@ -48,7 +48,7 @@ h4 {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 200px;
 }
 
 img {
@@ -60,12 +60,13 @@ img {
 }
 
 a {
-  color: #2d5e5e;
+  color: #497071;
   text-decoration: underline;
 }
 
-a:visited { /* visited link */
-  color: #509696;
+a:visited {
+  /* visited link */
+  color: #2d5e5e;
   text-decoration: underline;
 }
 
@@ -76,7 +77,8 @@ a:focus {
   font-weight: 700;
 }
 
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #2d5e5e;
   font-weight: 700;
   font-style: italic;
@@ -85,7 +87,7 @@ a:active { /* selected link */
 .button {
   display: inline-block;
   background-color: #b2d2d1;
-  color: #2d5e5e;
+  color: #497071;
   text-decoration: none;
   font-weight: 400;
   padding: 10px;
@@ -113,7 +115,6 @@ a:active { /* selected link */
 }
 
 /* Layout styling */
-
 .container {
   padding: 0 40px;
 }
@@ -141,13 +142,13 @@ header {
   position: relative;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -155,7 +156,7 @@ nav > ul > li > a {
   text-decoration: none;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -163,14 +164,14 @@ nav > ul > li > a:visited {
   text-decoration: none;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #2d5e5e;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -186,24 +187,25 @@ nav > ul > li > a:active {
   position: absolute;
   right: 0;
   padding-right: 0;
-  top: 44px;
+  top: 35px;
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid #b2d2d1;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -240,7 +242,7 @@ nav > ul > li > a:active {
   padding-top: 25px;
 }
 
-#social > div {
+#social>div {
   margin: 0 5px;
 }
 
@@ -253,49 +255,49 @@ Medium devices (730px and larger)
 ================================= */
 @media only screen and (min-width: 730px) {
   header {
-  text-align: unset;
+    text-align: unset;
   }
 
   nav {
-  padding-top: 62px;
-  padding-left: 20px;
-  width: auto;
-  text-align: right;
+    padding-top: 62px;
+    padding-left: 20px;
+    width: auto;
+    text-align: right;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
     border-top: 1px solid #ffffff;
   }
 
-  nav > ul {
-  margin: 1em 0;
+  nav>ul {
+    margin: 1em 0;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
+    display: inline-block;
   }
 
   .navtoggle li:last-child {
-  display: none;
+    display: none;
   }
 
   .logo {
-  float: left;
-  max-width: 250px;
+    float: left;
+    max-width: 250px;
   }
 
   .col-md-6 {
-  width: 50%;
+    width: 50%;
   }
 
   [class*="col-"] {
-  float: left;
-  padding-right: 20px;
+    float: left;
+    padding-right: 20px;
   }
 
   #about-page h3 {
-  margin-top: 0;
+    margin-top: 0;
   }
 
   #aboutpic {
@@ -307,20 +309,19 @@ Medium devices (730px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   .col-lg-7 {
-  width: 58.33%;
+    width: 58.33%;
   }
 
   .col-lg-5 {
-  width: 41.66%;
+    width: 41.66%;
   }
 
   .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .berlin-illustration {
@@ -330,9 +331,17 @@ Large devices (1024px or larger)
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -344,8 +353,13 @@ Large devices (1024px or larger)
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -357,8 +371,13 @@ Large devices (1024px or larger)
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
